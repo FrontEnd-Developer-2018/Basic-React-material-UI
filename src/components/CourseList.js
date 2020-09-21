@@ -2,9 +2,10 @@ import React, { Component } from 'react'
 import Grid from '@material-ui/core/Grid';
 import TextField from '@material-ui/core/TextField';
 import * as contentful from 'contentful'
-import Course from '../components/Course'
+import Course from './Course'
+
 const SPACE_ID = '31nd11o13q1t'
-const ACCESS_TOKEN = 'CFPAT-6YD_89zkoghAt4rtpX9X_6ZRcCweBkwcDpq3UT1dWxM'
+const ACCESS_TOKEN = '3IMWZjKJA1967wP_LOkpy9SStqGCnb4nPuVrK771dUM'
 const client = contentful.createClient({
     space: SPACE_ID,
     accessToken: ACCESS_TOKEN
@@ -20,8 +21,7 @@ class CoursesList extends Component {
     }
     getCourses = () => {
         client.getEntries({
-            content_type: 'course',
-            query: this.state.searchString
+            content_type: 'course'
         })
         .then((response) => {
             this.setState({courses: response.items})
