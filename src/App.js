@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import NavBar from './components/NavBar';
-import CoursesList from './components/CoursesList';
+import CoursesList from './components/CourseList';
 
 class App extends Component {
   render() {
