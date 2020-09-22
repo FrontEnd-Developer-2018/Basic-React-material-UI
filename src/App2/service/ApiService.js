@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const USER_API_BASE_URL = 'http://localhost:8080/users';
+const USER_API_BASE_URL = 'https://cool-meadow-4540.getsandbox.com:443';
 
 class ApiService {
 

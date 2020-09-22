@@ -7,14 +7,12 @@ import React from "react";
 const AppRouter = () => {
     return(
         <div style={style}>
-            <Router>
-                    <Switch>
+           
                         <Route path="/" exact component={ListUserComponent} />
                         <Route path="/users" component={ListUserComponent} />
                         <Route path="/add-user" component={AddUserComponent} />
                         <Route path="/edit-user" component={EditUserComponent} />
-                    </Switch>
-            </Router>
+                    
         </div>
     )
 }
